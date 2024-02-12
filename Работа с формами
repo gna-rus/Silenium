@@ -6,3 +6,5 @@ select.select_by_value(value)
 
 select = Select(driver.find_element_by_id('id'))
 select.deselect_all() - снять выделения
+
+element.submit() - реализовать форму (исполнить)

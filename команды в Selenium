@@ -1,0 +1,18 @@
+● driver.get("https://selenium.dev") — открыть веб-сайт
+● driver.back() — кнопка браузера «Назад»
+● driver.forward() — кнопка браузера «Вперед»
+● driver.refresh() — обновить страницу
+● driver.quit() — закончить сеанс браузера
+
+● find_element_by_id — поиск по id
+● find_element_by_name — поиск по имени
+● find_element_by_xpath — поиск по xpath-локатору
+● find_element_by_link_text — поиск по тексту ссылки
+● find_element_by_partial_link_text — поиск по части текста ссылки
+● find_element_by_tag_name — поиск по имени тега
+● find_element_by_class_name — поиск по имени класса
+● find_element_by_css_selector — поиск по css-селектору
+
+element.click() - осуществление Клик на элемент
+element.send_keys("some text") - отправка на сайт какой либо текст
+element.clear() - очистка поля от текст

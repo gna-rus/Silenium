@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.service import Service
 with open("./testdata.yaml") as f:
     testdata = yaml.safe_load(f)
     browser = test data["browser"]
-    
+
 # библиотеки для скачивания драйверов браузеров
 from webdriver_manager.firefox import Gecko DriverManager
 from webdriver_manager.chrome import Chrome Driver Manager
@@ -18,13 +18,13 @@ class Site:
     def ＿init＿(self, address):
         if browser = "firefox":
             service = Service(executable_path=GeckoDriverManager().install())
-            options = webdriver.Firefox options()
+            options = webdriver.FirefoxOptions()
             self.driver = webdriver.Firefox(service=service, options=options)
         elif browser = "chrome":
             service = Service(executable_path=ChromeDriverManager().install())
             options = webdriver.ChromeOptions()
             self.driver = webdriver.Chrome(service=service, options=options)
-            self.driver.implicitly_wait(3)
-            self.driver.maximize_window()
-            self.driver.get(address)
-            time.sleep(testdata["sleep_time"])
+        self.driver.implicitly_wait(3)
+        self.driver.maximize_window()
+        self.driver.get(address)
+        time.sleep(testdata["sleep_time"])
